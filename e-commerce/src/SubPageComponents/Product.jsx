@@ -13,19 +13,19 @@ export default function Product(product) {
   //   setCartCount(cartCount + 1);
   // }
 
-  const [Image, setImage] = useState(pathname === "/" ? product.image : product.image[0]);
+  const [Image, setImage] = useState(pathname === "/" ? product.image : `./${product.image[0]}`);
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
     if (pathname !== "/") {
-      setImage(product.image[1]);
+      setImage(`./${product.image[1]}`);
       setIsHovered(true);
     }
   };
 
   const handleMouseLeave = () => {
     if (pathname !== "/") {
-      setImage(product.image[0]);
+      setImage(`./${product.image[0]}`);
       setIsHovered(false);
     }
   };
