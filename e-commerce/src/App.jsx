@@ -15,7 +15,7 @@ import axios from "axios";
 import { UserContextProvider } from "./Context/UserContext";
 
 function App() {
-  axios.defaults.baseURL = 'http://localhost:4000/';
+  // axios.defaults.baseURL = 'http://localhost:4000/';
   return (
     <div className="App selection:bg-gray-400">
       <UserContextProvider>
