@@ -1,8 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Contact_us() {
   return (
-    <div>Contact-us</div>
+    <div className='text-center'>
+      <span>Name: M. Ismail</span>
+      <span>Contact Number: <Link to="#">03111437753</Link></span>
+    </div>
   )
 }
 
