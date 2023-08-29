@@ -27,7 +27,7 @@ export default function ImageCarousel(product) {
           product.urls.map((url, i) => (
             <Carousel.Item key={i}>
               <ImageMagnifier
-                url={`${url}`}
+                url={`/${url}`}
               />
               {/* <img
                 className="max-w-full transition-transform duration-300 hover:scale-125 cursor-crosshair"
@@ -44,7 +44,7 @@ export default function ImageCarousel(product) {
             {
               product.urls.map((url, i) => (
                 <div key={i} className="slide">
-                  <img onClick={() => setIndex(i)} className='max-w-full' src={`${url}`} />
+                  <img onClick={() => setIndex(i)} className='max-w-full' src={`/${url}`} />
                 </div>
               ))
             }
