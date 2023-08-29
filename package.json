@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node Server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --force --prefix e-commerce && npm run build --prefix e-commerce"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Admin && npm run build --prefix Admin"
   },
   "keywords": [],
   "author": "",
