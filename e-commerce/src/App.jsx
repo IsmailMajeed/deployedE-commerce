@@ -11,8 +11,18 @@ import Signup from "./Pages/Signup";
 import Cart from "./Pages/Cart";
 import Liked from "./Pages/Liked";
 import { LikedContextProvider } from "./Context/LikedContext";
-import axios from "axios";
+// import axios from "axios";
 import { UserContextProvider } from "./Context/UserContext";
+
+const NotFound = () => {
+  return (
+    <div className="flex flex-col items-center h-screen justify-center">
+      <h1 className="text-red-700">404 - Not Found</h1>
+      <p>The page you are looking for does not exist.</p>
+      <Link to="/">Go back to the home page</Link>
+    </div>
+  );
+};
 
 function App() {
   // axios.defaults.baseURL = 'http://localhost:4000/';
@@ -36,6 +46,7 @@ function App() {
                 </Route>
                 <Route path="/Payment/:id/:type/:colour/:quantity" element={<Payment />} />
                 <Route path="/Payment/checkout" element={<Payment />} />
+                <Route path="*" element={<NotFound />} />
               </Routes>
             </BrowserRouter>
           </LikedContextProvider>
