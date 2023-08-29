@@ -94,7 +94,7 @@ export default function Cart() {
                                 <td className={'pb-5 w-1/2' + (i === 0 ? ' pt-5 ' : '')}>
                                   <div className='flex'>
                                     <img className='w-36 h-56'
-                                      src={`http://localhost:4000/${cartProduct.product.images[0]}`} alt="" />
+                                      src={`${cartProduct.product.images[0]}`} alt="" />
                                     <div className='text-left text-gray-500 ml-10'>
                                       <Link to={`/Pricing/${cartProduct.product._id}`} className='text-black no-underline hover:underline font-semibold text-lg'>
                                         {cartProduct.product.productName}

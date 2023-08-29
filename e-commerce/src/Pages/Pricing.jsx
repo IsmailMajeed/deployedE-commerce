@@ -108,7 +108,7 @@ function Pricing() {
                 </div>
                 <div className='flex gap-3 my-7'>
                   <div className={select === 0 ? 'w-1/5' : 'w-1/4'}>
-                    <img src={`http://localhost:4000/${product?.images[0]}`} alt="test" />
+                    <img src={`${product?.images[0]}`} alt="test" />
                   </div>
                   <div className='flex flex-col gap-2.5'>
                     <nav className='w-60 font-semibold'>{product.productName}</nav>

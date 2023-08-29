@@ -167,7 +167,7 @@ function Payment() {
                           <div className='flex items-center gap-2'>
                             <div className='relative'>
                               <nav className='absolute -right-3 -top-3 rounded-full bg-gray-500 text-white px-2'>{p.quantity}</nav>
-                              <img className='border px-2.5 rounded-lg bg-white w-16' src={`http://localhost:4000/${p.product.images[0]}`} />
+                              <img className='border px-2.5 rounded-lg bg-white w-16' src={`${p.product.images[0]}`} />
                             </div>
                             <div className='text-xs'>
                               <b>{p.product.productName}</b>

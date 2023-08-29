@@ -41,7 +41,7 @@ export default function Product(product) {
           <div>
             <img
               loading='lazy'
-              src={`http://localhost:4000/${Image}`}
+              src={`${Image}`}
               alt="img"
               className={"max-w-full max-h-full rounded-sm transition-transform duration-700 " + (pathname === '/' ? '' : (isHovered ? ' scale-105' : ''))} />
           </div>

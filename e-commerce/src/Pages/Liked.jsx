@@ -114,7 +114,7 @@ export default function Liked() {
                     </td>
                     <td className={'pb-2 pl-2 text-left border' + (i === 0 ? ' pt-2 ' : '')}>
                       <img className='w-28 h-40'
-                        src={`http://localhost:4000/${product.images[0]}`} alt="" />
+                        src={`${product.images[0]}`} alt="" />
                     </td>
                     <td className='border'>
                       <Link to={`/Pricing/${product._id}`}>
