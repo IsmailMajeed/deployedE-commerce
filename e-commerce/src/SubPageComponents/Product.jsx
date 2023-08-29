@@ -13,7 +13,7 @@ export default function Product(product) {
   //   setCartCount(cartCount + 1);
   // }
 
-  const [Image, setImage] = useState(pathname === "/" ? product.image : `./${product.image[0]}`);
+  const [Image, setImage] = useState(pathname === "/" ? product.image : `/${product.image[0]}`);
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
